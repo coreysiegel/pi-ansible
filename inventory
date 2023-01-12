@@ -1,9 +1,9 @@
 # update IP address to your Raspberry Pi's, and additional as needed
-192.168.0.1
+10.137.215.185
 
 [all:vars]
 ansible_connection=ssh
 # update username per ACS General Info Sheet
-ansible_user=pi
+ansible_user=acs
 # update password per ACS General Info Sheet
-ansible_ssh_pass=password
+ansible_ssh_pass=acsmembers
