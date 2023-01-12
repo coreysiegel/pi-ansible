@@ -19,9 +19,11 @@ This project is intended to create standard Raspberry Pi systems for SF ACS fiel
     * Reboot when prompted.
     * Enable SSH from Menu, Preferences, Raspberry Pi Configuration, Interfaces, enable SSH
   * On server/workstation:
-    * Install Git and Ansible from package manager.
+    * Install Git, Ansible, SSHPass from package manager via `sudo apt-get update && sudo apt-get install git ansible sshpass`
     * Clone this git repository via `git clone git@github.com:coreysiegel/pi-ansible.git`
+		* Test connection to servers via `ansible all -i inventory -m ping`
   * Run this Ansible package.
+
 
 ## Capabilities
  * None
