@@ -16,6 +16,8 @@ This project is intended to create standard Raspberry Pi systems for SF ACS fiel
     * Set username and password per ACS General Info Sheet (first page).
     * Skip wifi setup.
     * Check for updates.
+    * Reboot when prompted.
+    * Enable SSH from Menu, Preferences, Raspberry Pi Configuration, Interfaces, enable SSH
   * On server/workstation:
     * Install Git and Ansible from package manager.
     * Clone this git repository via `git clone git@github.com:coreysiegel/pi-ansible.git`
