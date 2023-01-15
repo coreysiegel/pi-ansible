@@ -9,3 +9,9 @@
       name: "*"
       state: latest
       update_cache: yes
+
+  - name: Install packages
+    ansible.builtin.apt:
+      pkg:
+      - minicom
+      - mtr
