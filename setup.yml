@@ -1,0 +1,11 @@
+---
+- name: setup Raspberry Pi
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Update package manager and all currently installed packages
+    ansible.builtin.apt:
+      name: "*"
+      state: latest
+      update_cache: yes
