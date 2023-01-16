@@ -4,6 +4,6 @@
 [all:vars]
 ansible_connection=ssh
 # update username per ACS General Info Sheet
-ansible_user=pi
+ansible_user=username
 # update password per ACS General Info Sheet
 ansible_ssh_pass=password

@@ -19,17 +19,19 @@ This project is intended to create standard Raspberry Pi systems for SF ACS fiel
     * Reboot when prompted.
     * Enable SSH from Menu, Preferences, Raspberry Pi Configuration, Interfaces, enable SSH
   * On server/workstation:
-    * Install Git, Ansible, SSHPass from package manager via `sudo apt-get update && sudo apt-get install git ansible sshpass`
-    * Clone this git repository via `git clone git@github.com:coreysiegel/pi-ansible.git`
-    * Test connection to servers via `ansible all -m ping`
-  * Run this Ansible package via `ansible-playbook setup.yml`
+    * Install Git, Ansible, SSHPass from package manager `sudo apt-get update && sudo apt-get install git ansible sshpass`
+    * Clone this git repository `git clone git@github.com:coreysiegel/pi-ansible.git`
+    * Reset fingerprint `ssh-keygen -f ~/.ssh/known_hosts -R <IP address>`
+    * Manually ssh to Pi to add fingerprint `ssh username@<IP address>`
+    * Test connection to servers `ansible all -m ping`
+  * Run this Ansible package `ansible-playbook setup.yml`
   * Repeat for each Pi.
     * Shut down Pi.
     * Swap SD card in Pi and boot.
-    * Reset fingerprint with `ssh-keygen -f ~/.ssh/known_hosts -R <IP address>`
-    * Manually ssh to Pi to add fingerprint.
-    * Test connection via ansible with `ansible all -m ping`
-    * Run this Ansible package via `ansible-playbook setup.yml`
+    * Reset fingerprint `ssh-keygen -f ~/.ssh/known_hosts -R <IP address>`
+    * Manually ssh to Pi to add fingerprint `ssh username@<IP address>`
+    * Test connection via ansible `ansible all -m ping`
+    * Run this Ansible package `ansible-playbook setup.yml`
 
 
 ## Capabilities
