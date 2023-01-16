@@ -35,11 +35,10 @@ This project is intended to create standard Raspberry Pi systems for SF ACS fiel
 
 
 ## Capabilities
- * None
-
-## Future Capabilities
  * Minicom
  * MTR
+
+## Future Capabilities
  * Pat
  * Direwolf
  * Packet via external hardware TNC (minicom)
